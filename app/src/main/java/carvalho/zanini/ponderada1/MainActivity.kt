@@ -15,7 +15,6 @@ import kotlin.random.Random
 import androidx.compose.foundation.Image
 
 import androidx.compose.ui.tooling.preview.Preview
-import carvalho.zanini.ponderada1.ui.theme.Ponderada1Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -109,6 +108,10 @@ fun obterImagemDado(tipo: String, valor: Int): Int {
             5 -> R.drawable.inverted_dice_5
             else -> R.drawable.inverted_dice_6
         }
+
+        "D10" -> R.drawable.dice_10
+
+        "D20" -> R.drawable.dice_20
 
         else -> R.drawable.ic_launcher_foreground
     }
